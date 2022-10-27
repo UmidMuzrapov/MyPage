@@ -1,0 +1,129 @@
+﻿@page "/"
+
+<style>
+    /*
+        Styles normally go in a .css file.
+        This is just a simple example to get you started.
+    */
+    .myWindow {
+        width: 100%;
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+     div.k-window.myWindow .k-window-titlebar{
+         background-image: 
+         linear-gradient(to right, rgb(30, 144, 255), rgb(8, 71, 138));
+}
+    }
+
+    .notification-container {
+        position: absolute;
+        top: 60px;
+        min-height: 80px;
+        right: 16px;
+        width: 450px;
+    }
+
+     .introduction
+    {
+        margin:auto;
+        text-align:center;
+        font-size: 32px;
+        padding:18px;
+        color: aliceblue;
+    }
+
+    #name{
+        font-size:40px;
+        color: aliceblue;
+    }
+
+
+
+
+</style>
+@if (!IsWindowVisible)
+{
+    <div class="alert alert-warning">
+        <p>
+            You closed the window. To open it, please click here 
+            <TelerikButton ThemeColor="@(ThemeConstants.Button.ThemeColor.Primary)" OnClick="@( _ => IsWindowVisible = true )">Show Window</TelerikButton>
+        </p>
+    </div>
+}
+
+<div class="introduction">
+    <h1 id="name">Umid Muzrapov</h1>
+    <h2>A portfolio of my projects as an aspiring software engineer.</h2>
+</div>
+<div>
+<TelerikWindow @bind-Visible="@IsWindowVisible" Class="myWindow" Top="300px" Left="12.5%" Draggable="false">
+    <WindowTitle>
+        <h1>About me</h1>
+    </WindowTitle>
+    <WindowContent>
+        <div class="row">
+            <div class="col">
+                <h2>Welcome</h2>
+                <p>Welcome to my web page. </p>
+                <p>I am a sophomore at the University of Arizona, where I study computer science and mathematics. During my undergraduate years, I want to explore the tech field as well to find my true passion. After graduation, I am planning to work in the industry before I continue my education in graduate school.</p>
+                <p>Currently my interests are web-development, software architecture and database design.</p>
+            </div>
+            <div class="col">
+                <h2>Projects</h2>
+                <p>
+                    The primary purpose of this site is to showase my projects and give some infromation about me.
+                    Projects are independently, as a part of schoolwork, or an online course. If you have any question regarding my projects,
+                    feel free to email me at umidmuzrapov@arizona.edu.
+                </p>
+                <p>
+                    As I will be working on more projects, the site will grow. Later, I might adopt some of projects for the web,
+                    so the users can test them on the web. This should free them from the pain of installing the software from GitHub and configuring it.
+                </p>
+            </div>
+
+            <div class="col">
+                <h3>Useful Links</h3>
+
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://docs.telerik.com/blazor-ui/introduction"><img src="../css/linkedin.jpg" height="25" width="25"/>LinkedIn</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://demos.telerik.com/blazor-ui"><img src="../css/github.png" height="25" width="25"/>GitHub</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/telerik/blazor-ui"><img src="../css/hackerrank-icon-3ruwgb2qxxh1gxg6-c.png" height="25" width="25"/>HackerRank</a>
+                    </li>
+                    
+                </ul>
+                
+            <h3>Contacts</h3>
+            <p><strong> <TelerikIcon Icon="envelop-link"/>Email: umidmuzrapov@arizona.edu</strong></p>
+            <p>You can also reach in LinkedIn.</p>
+            </div>
+        </div>
+    </WindowContent>
+    <WindowActions>
+        <WindowAction Name="Close"></WindowAction>
+    </WindowActions>
+</TelerikWindow>
+
+</div>
+
+@code {
+
+    public bool IsWindowVisible { get; set; } = true;
+
+    public TelerikAnimationContainer AnimationContainer { get; set; }
+
+    public async void Show(MouseEventArgs args)
+    {
+        await AnimationContainer.ShowAsync();
+
+        await Task.Delay(6000);
+
+        await AnimationContainer.HideAsync();
+    }
+}
