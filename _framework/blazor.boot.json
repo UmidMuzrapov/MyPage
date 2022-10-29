@@ -9,7 +9,7 @@
     "assembly": {
       "Microsoft.AspNetCore.Components.dll": "sha256-mCjlw0kvBv5xU+o2hI0vtIfJ7gOJ2jkrJbULvmcFd5o=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-im2gqSqA6ZRuQ4TklK5obV1VdEL+UouCT0siFZPUsAo=",
-      "Microsoft.AspNetCore.Components.Web.dll": "sha256-K8mNssh3eZ2HI+q+8b+TuZ4Y8gK10aZx1qVqKwNrD+I=",
+      "Microsoft.AspNetCore.Components.Web.dll": "sha256-ArQbewxZX3SQPEryQuKa+MMfEny21FIApULVL9zTKwA=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-Ph2ZOl\/LOY2cCUG\/S2iA61YUWIsDlcAHFxzdTG43rPw=",
       "Microsoft.CSharp.dll": "sha256-Ql9uDh4XMBh5OHETeyokvLwqjN3rNcJPJWwXz\/bM+RU=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-zhFtW4kE16TdrpPne9I1Cu9o0KYzrS50VE9MVSifJg4=",
@@ -49,7 +49,7 @@
       "System.Private.Uri.dll": "sha256-YiXFHDzGxjddEyuQtmLh1bnJmjX9EZ0GOxxq85lIHJ0=",
       "System.Private.Xml.dll": "sha256-j28YzEBI+0e4M2Jh\/BlUOMjaDDsjC4jM3xZZGywekZw=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-5IU6GUX8qOctLAYHuQ7clOc3ohNJ6aky7koryZ5i6W8=",
-      "System.Runtime.dll": "sha256-F7OUjwIFVHWTsSET0SP2oLF2m3l\/40dqOg3kcE1n9rk=",
+      "System.Runtime.dll": "sha256-J\/iLHA47yHjRxFPGh04f0gb443SspMEtyqnb1xUtW2k=",
       "System.Runtime.Loader.dll": "sha256-tMALPn9wJ9WSqup18khAgsti52YtQ4hmCbbyhtY36EE=",
       "System.Runtime.Serialization.Primitives.dll": "sha256-OaXUL6lQVqwu7Zwwr6WgRqJUKt3ejwvnq+VDHYVy1rk=",
       "System.Security.Cryptography.Algorithms.dll": "sha256-tF2cMotOe8Wni0AjgtULV095HHBvTSYrOJtx\/RcDzxk=",
@@ -61,7 +61,7 @@
       "Telerik.Documents.SpreadsheetStreaming.dll": "sha256-8147aRwniIlc\/uwkoGzAEzTl0Fn2PlXhAyRqXXVEUFs=",
       "Telerik.Recurrence.dll": "sha256-ISCqbhXvN\/1s0TEoix1QCpBJRpVcdFDu32fwDNT4D8A=",
       "Telerik.Zip.dll": "sha256-ww4h7KNXU4AgxQL3OInD1zlJFnHn+GwConbKnON1bhI=",
-      "UmidMuzrapov.Client.dll": "sha256-lGph4HDFeNXnVXQpdkBZgE3QokgUL1wjTQuuKF1KETo=",
+      "UmidMuzrapov.Client.dll": "sha256-CLfgES6SNDDAqxSh4uESfyoUjQHpE5dh1jBYHlHMYtI=",
       "UmidMuzrapov.Shared.dll": "sha256-xbA\/26VpsM0rGyss7E+3kUtXp1MqHNFdyEh5cxnyu70="
     },
     "extensions": null,
