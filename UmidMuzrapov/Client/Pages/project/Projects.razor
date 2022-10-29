@@ -24,7 +24,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        _pythonProjects=await Http.GetFromJsonAsync<List<Project>>("css/projects/python/python.json");
+        _pythonProjects=await Http.GetFromJsonAsync<List<Project>>("/css/projects/python/python.json");
     }
 }
 
