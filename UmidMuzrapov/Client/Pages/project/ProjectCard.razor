@@ -1,0 +1,86 @@
+﻿<div class="frame">
+    <div>
+        <div class="frameline">
+            <p class="header"><strong>@Project.Name</strong></p>
+        </div>
+   
+        <img src="@Project.Image" class="auhtorPhoto" alt="@Project.Name"/>
+     </div>
+
+    <div class="projectbuttons">
+        <TelerikButton Icon="more-horizontal" Title="Details" ThemeColor="@Telerik.Blazor.ThemeConstants.Button.ThemeColor.Base">See in GitHub</TelerikButton>
+
+       <div class="livetest"> 
+       @if (Project.LiveTest==true)
+            {<TelerikButton Icon="play" Title="Live test" ThemeColor="@Telerik.Blazor.ThemeConstants.Button.ThemeColor.Success"> </TelerikButton>}
+      </div>
+    </div>
+
+    <div class="description">
+        <p><strong>Description:</strong>@Project.Description</p>
+    </div>
+
+    @if (!(@Project.Tools.Equals("None")))
+    {
+        <p><strong>Tools: </strong>@Project.Tools</p>
+    }
+
+</div>
+
+@code {
+    [Parameter][EditorRequired] public Project Project { get; set; }=default;
+
+}
+
+<style>
+.livetest
+{
+    padding-right:5px;
+    display:inline;
+}
+.header
+{
+    text-align:center;
+    color:white;
+}
+img{
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    margin: auto;
+    display: block;
+}
+.toolselements
+{
+    display:inline;
+}
+.projectbuttons{
+    padding: 5px;
+    text-align:center;
+}
+
+.description
+{
+    padding:5px;
+}
+.frameline{
+    background: linear-gradient(rgb(30, 144, 255), rgb(8, 71, 138));
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    height:30px;
+}
+.projectName{
+    font-size:16px;
+    text-align:center;
+}
+
+.frame{
+    border-radius: 10px;
+    margin:5px;
+    font-size: 16px;
+    background-clip:padding-box;
+    background: hsla(0, 0%, 100%, 0.3);
+    backdrop-filter: saturate(180%) blur(10px);
+    position: relative;
+}
+</style>

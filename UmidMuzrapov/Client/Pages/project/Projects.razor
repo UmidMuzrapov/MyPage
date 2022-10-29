@@ -1,0 +1,37 @@
+﻿@page "/projects"
+@inject HttpClient Http
+
+@if (_pythonProjects == null)
+{
+    <p>Loading projects...</p>
+}
+else
+{
+    <div class="grid">
+    
+    @foreach (var project in _pythonProjects)
+    {
+        <ProjectCard Project="project"/>
+    }
+    </div>
+
+    <p><a href="/authorAddForm">Add my card</a></p>
+}
+
+@code 
+{
+    private List<Project>? _pythonProjects;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _pythonProjects=await Http.GetFromJsonAsync<List<Project>>("css/projects/python/python.json");
+    }
+}
+
+<style>
+    .grid
+    {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+</style>
