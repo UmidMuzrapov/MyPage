@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/css/projects/python/wordsearch.svg",
+    "image": "/MyPage/css/projects/python/wordsearch.svg",
     "name": "Word Search",
     "description": " The program finds the words in crossword and prints out each words in separate grid, where everything except the word is replaced with '.'.",
     "liveTest": false,
@@ -10,7 +10,7 @@
 
   {
     "id": 2,
-    "image": "/css/projects/python/railyard.jpg",
+    "image": "/MyPage/css/projects/python/railyard.jpg",
     "name": "Rail yard",
     "description": "The user moves train cars from track to track. Once a track contains only cars going to the same location, the train departs. The user wins if there is not car left.",
     "liveTest": true,
@@ -19,7 +19,7 @@
 
   {
     "id": 3,
-    "image": "/css/projects/python/connectn.png",
+    "image": "/MyPage/css/projects/python/connectn.png",
     "name": "Connect N",
     "description": "The program allows the user to play famous Connect 4. Unlike Connect 4, the user can create the board of the size up to 10*10, and the number of player can be up to 5.",
     "liveTest": false,
@@ -28,7 +28,7 @@
 
   {
     "id": 4,
-    "image": "/css/projects/python/rhymes.jpg",
+    "image": "/MyPage/css/projects/python/rhymes.jpg",
     "name": "Rhymes",
     "description": "The program reads words from the user, one word per line. Then, it returns all the words that perfectly rhyme with the given word. If no rhyme is found, or word is not in dictionary, program says there is no word found.",
     "liveTest": false,
@@ -37,7 +37,7 @@
 
   {
     "id": 5,
-    "image": "/css/projects/python/mazesolver.png",
+    "image": "/MyPage/css/projects/python/mazesolver.png",
     "name": "Maze Solver",
     "description": "It reads the map up from a file, builds a tree to represent the maze, and then searches through the tree to find a path from the start to the end.",
     "liveTest": false,
