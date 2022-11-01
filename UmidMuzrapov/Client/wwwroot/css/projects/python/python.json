@@ -19,7 +19,7 @@
 
   {
     "id": 3,
-    "image": "/MyPage/css/projects/python/connectn.jpeg",
+    "image": "/MyPage/css/projects/python/connect.jpeg",
     "name": "Connect N",
     "description": "The program allows the user to play famous Connect 4. Unlike Connect 4, the user can create the board of the size up to 10*10, and the number of player can be up to 5.",
     "liveTest": false,
