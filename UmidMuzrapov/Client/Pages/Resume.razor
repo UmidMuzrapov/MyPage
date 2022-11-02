@@ -1,0 +1,129 @@
+﻿@page "/resume"
+<style>
+    .container1
+    {
+        width: 90%;
+        margin:auto;
+        background-clip:padding-box;
+        background: hsla(0, 0%, 100%, 0.3);
+        backdrop-filter: saturate(180%) blur(10px);
+        word-wrap: break-word
+    }
+
+    h2{
+          text-align:center;
+          margin:auto;
+    }
+
+    .section{
+        padding: 10px;
+    }
+    table{
+        text-align:left;
+        margin:auto;
+        table-layout: fixed;
+        width: 100%;
+    }
+    td{
+        padding: 25px;
+    }
+    
+    #line{
+         background-image: 
+         linear-gradient(to right, rgb(30, 144, 255), rgb(8, 71, 138));
+         height:40px;
+    }
+    
+    .section{
+        padding-bottom:10px;
+    }
+
+</style>
+
+
+<div class="container1">
+    <div id="education" class="section">
+        <h2>Education</h2>
+        <hr />
+        <p> <strong>University of Arizona: August 2021 – May 2025 (Tucson, AZ)</strong></p>
+        <p>Bachelor of Science, double major in Computer Science and Mathematics. GPA 4.0.</p>
+        <p>Relevant Coursework: Software Development, Cloud Computing, Intro to Computer Prog II, Discrete Math for Computer Science, Linear Algebra, Vector Calculus, Calculus II.</p>
+    </div>
+
+    <div id="skills" class="section"> 
+        <h2>Skills</h2>
+        <hr />
+        <table>
+            <tr>
+                <td>Python</td>
+                <td>Java</td>
+                <td>C#</td>
+                <td>JavaScript</td>
+                <td>.NET Framework </td>
+                <td>Data Structures</td>
+            </tr>
+
+            <tr>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>SQL</td>
+                <td>Docker</td>
+                <td>Unit Testing</td>
+                <td>Blazor</td>
+            </tr>
+
+            <tr>
+                <td>SQLite</td>
+                <td>Git/GitHub</td>
+                <td>ASP.NET</td>
+                <td>LINQ</td>
+                <td>React.js</td>
+                <td>Object-Oriented Design</td>
+            </tr>
+
+            <tr>
+                <td>Requirement Analysis</td>
+                <td>Linux Command Line</td>
+                <td>JSON</td>
+                <td>OS (Microsoft, macOS, Linux)</td>
+                <td>Node.js</td>
+                <td>Software Development Models</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="experience" class="section">
+    <hr />
+         <h2>Professional Experience</h2>
+         <div class="section">
+         <p><strong>Facilities Management IT, University of Arizona</strong></p>
+         <p><strong>Student Software Developer: August 2022 – Current (Tucson, AZ)</strong> </p>
+         <p>•	Develop dynamic web applications with HTML5, CSS, JavaScript, C# in Blazor and ASP.NET frameworks </p>
+         <p>•	Analyze software requirements, model the problem employing the informal approach as well object-oriented modeling to produce an SRS  </p>
+         <p>•	Contribute to mobile and desktop development and maintenance actively using Java, Windows Forms, WinUI, and Entity Framework </p>
+        </div>
+
+        <div class="section">
+        <p><strong>TechCore, Eller College of Management</strong> </p>
+        <p><strong>Full-Stack Development Intern: June 2022 – August 2022 (Tucson, AZ)</strong> </p>
+        <p>•	Worked in the Back-End Team to develop the back-end infrastructure of Radian 360, an anonymous feedback platform in progress</p>
+        <p>•	Contributed to the front-end user interface, using HTML, CSS, and JavaScript/C#.</p>
+        </div>
+
+        <div class="section">
+        <p><strong>College of Medicine IT, University of Arizona</strong> </p>
+        <p><strong>Technical Consultant: February 2022 – August 2022 (Tucson, AZ)</strong> </p>
+        <p>•	Provided technical support to system users within the College of Medicine, maintaining a Customer Satisfaction score >90%</p>
+        <p>•	Closed over 500 tickets by proactively troubleshooting, researching and resolving technical issues</p>
+        <p>•	Partnered with infrastructure/ app development/ security teams to determine solutions to efficiently manage complex service requests</p>
+        <p>•	Assisted users with software installations, network setup, user at home remote setups, and extensive computer trouble shooting</p>
+        </div>
+
+    </div>
+</div>
+
+
+@code
+{
+
+}
