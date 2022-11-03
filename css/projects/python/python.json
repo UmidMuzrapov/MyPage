@@ -9,15 +9,6 @@
   },
 
   {
-    "id": 2,
-    "image": "/MyPage/css/projects/python/railyard.jpeg",
-    "name": "Rail yard",
-    "description": "The user moves train cars from track to track. Once a track contains only cars going to the same location, the train departs. The user wins if there is not car left.",
-    "liveTest": true,
-    "tools": "Python"
-  },
-
-  {
     "id": 3,
     "image": "/MyPage/css/projects/python/connectn.jpeg",
     "name": "Connect N",
@@ -42,6 +33,15 @@
     "description": "It reads the map up from a file, builds a tree to represent the maze, and then searches through the tree to find a path from the start to the end.",
     "liveTest": false,
     "tools": "None"
+  },
+  
+    {
+    "id": 2,
+    "image": "/MyPage/css/projects/python/railyard.jpg",
+    "name": "Rail yard",
+    "description": "The user moves train cars from track to track. Once a track contains only cars going to the same location, the train departs. The user wins if there is not car left.",
+    "liveTest": true,
+    "tools": "Python"
   }
 
 ]
