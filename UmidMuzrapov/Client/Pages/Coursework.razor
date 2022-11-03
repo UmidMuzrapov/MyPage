@@ -79,7 +79,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        _courseList=await Http.GetFromJsonAsync<List<Course>>("css/coursework/coursework.json");
+        _courseList=await Http.GetFromJsonAsync<List<Course>>("/MyPage/css/coursework/coursework.json");
     }
 
     private string[] _onlineCourses =
