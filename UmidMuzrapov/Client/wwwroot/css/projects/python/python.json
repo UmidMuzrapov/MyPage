@@ -1,14 +1,5 @@
 [
   {
-    "id": 1,
-    "image": "/MyPage/css/projects/python/wordsearch.jpeg",
-    "name": "Word Search",
-    "description": " The program finds the words in crossword and prints out each words in separate grid, where everything except the word is replaced with '.'.",
-    "liveTest": false,
-    "tools": "None"
-  },
-
-  {
     "id": 3,
     "image": "/MyPage/css/projects/python/connectn.jpeg",
     "name": "Connect N",
@@ -42,6 +33,15 @@
     "description": "The user moves train cars from track to track. Once a track contains only cars going to the same location, the train departs. The user wins if there is not car left.",
     "liveTest": true,
     "tools": "Python"
+  },
+  
+   {
+    "id": 1,
+    "image": "/MyPage/css/projects/python/wordsearch.jpeg",
+    "name": "Word Search",
+    "description": " The program finds the words in crossword and prints out each words in separate grid, where everything except the word is replaced with '.'.",
+    "liveTest": false,
+    "tools": "None"
   }
 
 ]
