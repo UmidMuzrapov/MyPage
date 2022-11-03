@@ -1,0 +1,13 @@
+[
+  {
+    "name": "CSC 210, Software Development",
+    "grade": "A",
+    "description": "An introduction to the development of large-scale software. Topics include modularization, design patterns, documentation, unit testing, source code control, build systems, debugging, and performace tuning."
+  },
+
+  {
+    "name": "CSC 244, Discrete Math II",
+    "grade": "A",
+    "description": "A second course in mathematical concepts for computer science.  Topics include: recurrence relations; proofs in  propositional and first-order predicate logic; mathematical induction; graphs and trees; regular expressions and finite state machines."
+  }
+]
