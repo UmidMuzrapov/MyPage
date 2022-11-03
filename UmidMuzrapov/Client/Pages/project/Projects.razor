@@ -1,4 +1,4 @@
-﻿@page "/projects"
+@page "/projects"
 @inject HttpClient Http
 
 @if (_pythonProjects == null)
@@ -24,14 +24,27 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        _pythonProjects=await Http.GetFromJsonAsync<List<Project>>("/MyPage/css/projects/python/python.json");
+        _pythonProjects=await Http.GetFromJsonAsync<List<Project>>("css/projects/python/python.json");
     }
 }
 
 <style>
-    .grid
-    {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+
+    
+        @@media only screen and (max-width: 800px) {
+   .grid{
+       .flexcontainer{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr 1fr;
     }
+  }}
+
+  @@media screen and (min-width: 801px) {
+    .grid{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }}
+
+
 </style>
