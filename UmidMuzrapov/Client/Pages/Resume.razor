@@ -1,21 +1,18 @@
-﻿@page "/resume"
+@page "/resume"
 <style>
     .container1
     {
         width: 90%;
-        margin: auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
         background-clip:padding-box;
-        background: hsla(0, 0%, 100%, 0.3);
-        backdrop-filter: saturate(180%) blur(10px);
-        word-wrap: break-word;
-        border-radius: 20px;
+        background:#dfece6;
+        margin: 20px auto;
+        border-radius:10px;
     }
 
+
     h2{
-          text-align:center;
           margin:auto;
+          padding-left:20px;
     }
 
     .section{
@@ -24,27 +21,43 @@
     table{
         text-align:left;
         margin:auto;
-        table-layout: fixed;
+        border-collapse: collapse;
         width: 100%;
     }
     td{
         padding: 25px;
     }
-    
-    #line{
-         background-image: 
-         linear-gradient(to right, rgb(30, 144, 255), rgb(8, 71, 138));
-         height:40px;
-    }
-    
+   
     .section{
         padding-bottom:10px;
     }
 
+    #education{
+        padding-top: 20px;
+    }
+
+    #lineforresume{
+        height: 60px;
+        background-image: 
+         linear-gradient(to right, #84a395, #4e5f57);
+        border-top-left-radius:10px;
+         border-top-right-radius:10px;
+    }
+    
+    #resumeHeader{
+        text-align:center;
+        color:white;
+        margin: auto;
+        padding-top: 10px;
+    }
 </style>
 
 
 <div class="container1">
+
+    <div id="lineforresume">
+        <h2 id="resumeHeader">Resume</h2>
+    </div>
     <div id="education" class="section">
         <h2>Education</h2>
         <hr />
@@ -96,8 +109,9 @@
     </div>
 
     <div id="experience" class="section">
-    <hr />
+  
          <h2>Professional Experience</h2>
+           <hr />
          <div class="section">
          <p><strong>Facilities Management IT, University of Arizona</strong></p>
          <p><strong>Student Software Developer: August 2022 – Current (Tucson, AZ)</strong> </p>
