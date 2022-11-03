@@ -49,7 +49,7 @@
       "System.Private.Uri.dll": "sha256-YiXFHDzGxjddEyuQtmLh1bnJmjX9EZ0GOxxq85lIHJ0=",
       "System.Private.Xml.dll": "sha256-j28YzEBI+0e4M2Jh\/BlUOMjaDDsjC4jM3xZZGywekZw=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-5IU6GUX8qOctLAYHuQ7clOc3ohNJ6aky7koryZ5i6W8=",
-      "System.Runtime.dll": "sha256-z9lX\/XakPoTUO153AvG+PjHWhQuPUkehfQw4JbQWqec=",
+      "System.Runtime.dll": "sha256-uWqMCkgJtd4bkwDDRpBI319YGewbu4yvjuuadtcBNmI=",
       "System.Runtime.Loader.dll": "sha256-tMALPn9wJ9WSqup18khAgsti52YtQ4hmCbbyhtY36EE=",
       "System.Runtime.Serialization.Primitives.dll": "sha256-OaXUL6lQVqwu7Zwwr6WgRqJUKt3ejwvnq+VDHYVy1rk=",
       "System.Security.Cryptography.Algorithms.dll": "sha256-tF2cMotOe8Wni0AjgtULV095HHBvTSYrOJtx\/RcDzxk=",
@@ -61,7 +61,7 @@
       "Telerik.Documents.SpreadsheetStreaming.dll": "sha256-8147aRwniIlc\/uwkoGzAEzTl0Fn2PlXhAyRqXXVEUFs=",
       "Telerik.Recurrence.dll": "sha256-ISCqbhXvN\/1s0TEoix1QCpBJRpVcdFDu32fwDNT4D8A=",
       "Telerik.Zip.dll": "sha256-ww4h7KNXU4AgxQL3OInD1zlJFnHn+GwConbKnON1bhI=",
-      "UmidMuzrapov.Client.dll": "sha256-IPxienvARaV1BmRcI0uE60lJZRR1CdYO7AIdYn+SXrM=",
+      "UmidMuzrapov.Client.dll": "sha256-KfZimJvITVZeoMTKYQvjCeOzf1Oi2yxFvy01woNoNAI=",
       "UmidMuzrapov.Shared.dll": "sha256-xbA\/26VpsM0rGyss7E+3kUtXp1MqHNFdyEh5cxnyu70="
     },
     "extensions": null,
