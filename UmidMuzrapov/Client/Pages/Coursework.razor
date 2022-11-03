@@ -1,0 +1,90 @@
+﻿@page "/coursework"
+
+@inject HttpClient Http
+
+<style>
+
+    #contaienr1{
+        width:90%;
+        height:90%;
+        margin:auto;
+        background: rgba(256, 256, 256, 0);
+    }
+
+    @@media only screen and (max-width: 800px){
+        #container2{
+
+            display: grid;
+            grid-template-rows:1fr 1fr;
+            gap:10px 20px;
+        }}
+
+        @@media only screen and (min-width: 801px){
+        #container2{
+
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            gap:0 20px;
+        }}
+
+    #schoolwork, #books, #onlinecourses{
+       background:white;
+       padding: 10px;
+       border-radius: 10px;
+    }
+
+    #container3{
+        display: grid;
+        grid-template-rows:1fr 1fr;
+        gap: 20px 0px;
+    }
+</style>
+<div id="container1">
+    <div id="container2">
+        <div id="schoolwork">
+            <TelerikGrid Data="_courseList" Pageable="true">
+            <GridColumns>
+                <GridColumn Field="Name" Title="Course"/>
+                <GridColumn Field="Description" Title="Description"/>
+                <GridColumn Field="Grade" Title="Grade"/>
+            </GridColumns>
+            </TelerikGrid>
+
+        </div>
+
+        <div id="container3">
+            <div id="books">dsfsdfsd</div>
+            <div id="onlinecourses">
+             <table>
+                 <tr>
+                     <th> Online Courses</th>
+                  </tr>
+                   @for (int i=0; i<_onlineCourses.Length; i++)
+                        {
+                            <tr>
+                                <td>@_onlineCourses[i]</td>
+                            </tr>
+                        }
+             </table>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+@code {
+    private List<Course>? _courseList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _courseList=await Http.GetFromJsonAsync<List<Course>>("css/coursework/coursework.json");
+    }
+
+    private string[] _onlineCourses =
+        {
+            "Java Object-Oriented Programming",
+            ".NET 6: First Look"
+    };
+}
