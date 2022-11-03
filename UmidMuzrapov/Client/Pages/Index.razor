@@ -1,73 +1,73 @@
-﻿@page "/"
+
+@page "/"
 
 <style>
     /*
         Styles normally go in a .css file.
         This is just a simple example to get you started.
     */
-    .myWindow {
-        width: 100%;
-        max-width: 70%;
-        max-height: 70%;
-    }
+   
 
-     div.k-window.myWindow .k-window-titlebar{
-         background-image: 
-         linear-gradient(to right, rgb(30, 144, 255), rgb(8, 71, 138));
-}
-    }
-
-    .notification-container {
-        position: absolute;
-        top: 60px;
-        min-height: 80px;
-        right: 16px;
-        width: 450px;
-    }
-
-     .introduction
-    {
+    .container1{
+        background-color:white;
+        width:90%;
         margin:auto;
-        text-align:center;
-        padding:18px;
-        color: aliceblue;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        border-radius: 10px;
+        word-wrap: break-word;
+         overflow:hidden;
     }
 
-    #name{
-        color: aliceblue;
+    
+    @@media only screen and (max-width: 800px) {
+   .flexcontainer{
+       .flexcontainer
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr 1fr;
+    }
+  }
+
+  @@media screen and (min-width: 801px) {
+    .flexcontainer{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }}
+
+
+    .flexitem{
+        padding:10px;
     }
 
-
-
+    .line{
+         background-image: 
+         linear-gradient(to right, #84a395, #4e5f57);
+         color:white;
+         padding:10px;
+         height:20%;
+    }
 
 </style>
-@if (!IsWindowVisible)
-{
-    <div class="alert alert-warning">
-        <p>
-            You closed the window. To open it, please click here 
-            <TelerikButton ThemeColor="@(ThemeConstants.Button.ThemeColor.Primary)" OnClick="@( _ => IsWindowVisible = true )">Show Window</TelerikButton>
-        </p>
-    </div>
-}
 
-<div class="introduction">
-    <h1 id="name">Hi, I am Umid</h1>
-    <h2>Aspiring Software Engineer & CS Student</h2>
-</div>
-<div>
-<TelerikWindow @bind-Visible="@IsWindowVisible" Class="myWindow" Top="300px" Left="12.5%" Draggable="false">
-    <WindowTitle>
-        <h1>About me</h1>
-    </WindowTitle>
-    <WindowContent>
-        <div class="row">
-            <div class="col">
+
+
+
+<div class="container1">
+    <div class="line">
+        <h1>Hello, I am Umid</h1>
+    </div>
+
+    <div class="flexcontainer">
+        <div class="flexitem">
                 <h2>Welcome</h2>
+  
                 <p>I am a sophomore at the University of Arizona, where I study computer science and mathematics. During my undergraduate years, I want to explore the tech field as well to find my true passion. After graduation, I am planning to work in the industry before I continue my education in graduate school.</p>
                 <p>Currently my interests are web-development, software architecture and database design.</p>
             </div>
-            <div class="col">
+            
+            <div class="flexitem">
                 <h2>Projects</h2>
                 <p>
                     The primary purpose of this site is to showase my projects and give some infromation about me.
@@ -80,47 +80,29 @@
                 </p>
             </div>
 
-            <div class="col">
+            <div class="flexitem">
                 <h3>Useful Links</h3>
 
                 <ul>
                     <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/umidmuzrapov/">LinkedIn</a>
+                        <a target="_blank" href="https://docs.telerik.com/blazor-ui/introduction">LinkedIn</a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://github.com/UmidMuzrapov">GitHub</a>
+                        <a target="_blank" href="https://demos.telerik.com/blazor-ui">GitHub</a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.hackerrank.com/">HackerRank</a>
+                        <a target="_blank" href="https://github.com/telerik/blazor-ui">HackerRank</a>
                     </li>
                     
                 </ul>
                 
             <h3>Contacts</h3>
             <p><strong> <TelerikIcon Icon="envelop-link"/>Email: umidmuzrapov@arizona.edu</strong></p>
-            <p>You can also reach in LinkedIn.</p>
+            <p>You can also reach me in LinkedIn.</p>
             </div>
-        </div>
-    </WindowContent>
-    <WindowActions>
-        <WindowAction Name="Close"></WindowAction>
-    </WindowActions>
-</TelerikWindow>
+    </div>
 
 </div>
-
 @code {
 
-    public bool IsWindowVisible { get; set; } = true;
-
-    public TelerikAnimationContainer AnimationContainer { get; set; }
-
-    public async void Show(MouseEventArgs args)
-    {
-        await AnimationContainer.ShowAsync();
-
-        await Task.Delay(6000);
-
-        await AnimationContainer.HideAsync();
-    }
 }
