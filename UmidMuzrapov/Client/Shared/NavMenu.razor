@@ -9,12 +9,13 @@
     .k-nav.k-link {
         padding: 6px 12px;
         line-height: 1.4285714286;
-        color: whitesmoke;
+        color: #eff6f3;
     }
     .k-nav.k-state-active {
         font-weight: bold;
-        color: lightgrey;
+        color: grey;
     }
+
     .k-menu-group .k-item > .k-menu-link {
         line-height: 1.4285714286;
         padding: 4px 8px;
@@ -26,16 +27,33 @@
         -ms-flex-align: center;
         align-items: center;
         position: relative;
-        color:whitesmoke
+    }
+
+    .k-item>.k-menu-link{
+        color: black;
+        font:16px;
     }
 
     TelerikMenu{
-        background-color: rgb(8, 71, 138);
+        background-color: rgb(206, 27, 27);
     }
- 
+
+    @@media only screen and (max-width: 600px) {
+   #desktopmenu{
+        display: none;
+    }
+  }
+
+  @@media screen and (min-width: 601px) {
+    #mobilemenu{
+        display: none;
+    }}
+
+   #mobilemenu{
+       color:whitesmoke;
+   }
 
 </style>
-
 
 <TelerikMenu Data="@MenuItems">
     <ItemTemplate Context="item">
@@ -52,9 +70,14 @@
     </ItemTemplate>
 </TelerikMenu>
 
+<div id="mobilemenu">
+     <TelerikMenu Data="NewMenuItems">
+    </TelerikMenu>
+</div>
+
 @code {
     List<MenuItem> MenuItems { get; set; }
-
+    List<MenuItem> NewMenuItems { get; set; }
     MenuItem SelectedMenuItem { get; set; }
 
     bool IsInternalPage(string url)
@@ -96,6 +119,43 @@
                 Icon="track-changes-enable"
             }
  
+        };
+        
+                NewMenuItems=new List<MenuItem>()
+        {
+            new MenuItem()
+            {
+                Text = "Menu",
+                Items=new List<MenuItem>()
+                {
+                    new MenuItem()
+                    {
+                        Text = "Home",
+                        Url = "/MyPage/",
+                        Icon="home"
+                    },
+
+                    new MenuItem()
+                    {
+                        Text = "Projects",
+                        Url = "/MyPage/projects",
+                        Icon="code"
+                    },
+
+                    new MenuItem()
+                    {
+                        Text = "Resume",
+                        Url = "/MyPage/resume",
+                        Icon="file"
+                    },
+                    new MenuItem()
+                    {
+                        Text = "Relevant coursework",
+                        Url = "/MyPage/coursework",
+                        Icon="track-changes-enable"
+                    }
+                }
+            }
         };
     }
 }
