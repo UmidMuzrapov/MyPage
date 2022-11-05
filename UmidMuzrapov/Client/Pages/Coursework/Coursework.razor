@@ -105,8 +105,8 @@
 
     protected override async Task OnInitializedAsync()
     {
-        _courseList=await Http.GetFromJsonAsync<List<Course>>("css/coursework/coursework.json");
-        _onlineCourses=await Http.GetFromJsonAsync<List<OnlineCourse>>("css/coursework/onlinecoursework.json");
+        _courseList=await Http.GetFromJsonAsync<List<Course>>("/MyPage/css/coursework/coursework.json");
+        _onlineCourses=await Http.GetFromJsonAsync<List<OnlineCourse>>("/MyPage/css/coursework/onlinecoursework.json");
         _bookList=await Http.GetFromJsonAsync<List<Book>>("css/coursework/books.json");
     }
 
