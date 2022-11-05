@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Introduction to Java Programming and Data Structures",
+    "author": " Y. Liang"
+  },
+  {
+    "name": "Blazor in Action",
+    "author": " Chris Sainty"
+  },
+
+  {
+    "name": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke "
+  },
+
+  {
+    "name": "Fundamentals of Web Development",
+    "author": " Randy Connolly"
+  },
+  {
+    "name": "An Integrated Approach to Software Engineering",
+    "author": "Pankaj Jalote"
+  },
+  {
+    "name": "Seven Databases in Seven Weeks",
+    "author": "Eric Redmond"
+  }
+]
