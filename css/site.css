@@ -11,6 +11,7 @@ html, body, #app, .main {
     height: 100%;
     min-height: 100%;
     margin: 0;
+    font-family: 'PT Serif', serif;
 }
 
 html, body {
