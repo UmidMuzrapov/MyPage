@@ -61,10 +61,10 @@
     <div id="container2">
         <div id="schoolwork">
             <h3 class="center">University Courses</h3>
-            <TelerikGrid Data="_courseList" Pageable="true" PageSize="5">
+            <TelerikGrid Data="_courseList" Pageable="true" PageSize="5"  FilterMode="@GridFilterMode.FilterRow">
             <GridColumns>
-                <GridColumn Field="Name" Title="Course" Width="30%"/>
-                <GridColumn Field="Description" Title="Description"/>
+                <GridColumn Field="Name" Title="Course" Width="30%" DefaultFilterOperator="FilterOperator.Contains" ShowFilterCellButtons="false" />
+                <GridColumn Field="Description" Title="Description" DefaultFilterOperator="FilterOperator.Contains" ShowFilterCellButtons="false" />
             </GridColumns>
             </TelerikGrid>
 
