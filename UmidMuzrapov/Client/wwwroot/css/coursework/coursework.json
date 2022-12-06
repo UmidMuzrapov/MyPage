@@ -1,5 +1,17 @@
 [
   {
+    "name": "MATH 447, Combinatorial Mathematics",
+    "grade": "Pending",
+    "description": "Enumeration and construction of arrangements and designs; generating functions; principle of inclusion-exclusion; recurrence relations; a variety of applications."
+  },
+  
+  {
+    "name": "MATH 323, Formal Mathematical Reasoning and Writing",
+    "grade": "Pending",
+    "description": "Elementary real analysis as an introduction to abstract mathematics and the use of mathematical language. Elementary logic and quantifiers; manipulations with sets, relations and functions, including images and pre-images; properties of the real numbers; supreme and infimum; other topics selected from cardinality, the topology of the real line, sequence and limits of sequences and functions; the emphasis throughout is on proving theorems."
+  },
+  
+  {
     "name": "CSC 210, Software Development",
     "grade": "A",
     "description": "An introduction to the development of large-scale software. Topics include modularization, design patterns, documentation, unit testing, source code control, build systems, debugging, and performace tuning."
@@ -16,6 +28,19 @@
     "grade": "A",
     "description": "This course focuses on cloud programming, with an emphasis on using the cloud to solve Big Data problems. The course will not only look at how distributed systems, databases, networks, etc. are used to implement cloud computing platforms and cloud applications, but also the impact of the infinite scalability and pay-as-you-go on the platforms and applications."
   },
+ 
+  {
+    "name": "MATH 223, Vector Calculus",
+    "grade": "Pending",
+    "description": "Math 223 Vector Calculus (4 semester credit hours) The course covers differential and integral calculus of functions of several variables. Topics include vector valued and scalar functions, partial derivatives, directional derivatives, chain rule, local optimization, double and triple integrals, the line integral, Green's theorem, Stokes' theorem and the Divergence theorem. Examinations are proctored."
+  },
+  
+  {
+    "name": "MATH 313, Introduction to Linear Algebra",
+    "grade": "Pending",
+    "description": "An algorithmic approach to solving systems of linear equations transitions into the study of vectors, vector spaces and dimension. Matrices are used to represent linear transformations and this leads to eigenvectors and eigenvalues. The precise use of definitions plays an important role. Examinations are proctored. This course is required in the math major and prepares students to take Math 323. It is a prerequisite to the majority of the higher level courses in mathematics."
+  },
+  
   {
     "name": "CSC 120, Intro to Computer Prog II",
     "grade": "A",
@@ -26,19 +51,9 @@
     "grade": "A",
     "description": "The first of a two-course sequence introducing mathematical concepts for Computer Science. Topics include: sets, functions, and relations; propositional and predicate logic; foundational combinatorics; discrete probability; modular arithmetic; and recurrence relations."
   },
-
+  
   {
-    "name": "Math 223, Vector Calculus",
-    "grade": "Pending",
-    "description": "Math 223 Vector Calculus (4 semester credit hours) The course covers differential and integral calculus of functions of several variables. Topics include vector valued and scalar functions, partial derivatives, directional derivatives, chain rule, local optimization, double and triple integrals, the line integral, Green's theorem, Stokes' theorem and the Divergence theorem. Examinations are proctored."
-  },
-  {
-    "name": "Math 313, Introduction to Linear Algebra",
-    "grade": "Pending",
-    "description": "An algorithmic approach to solving systems of linear equations transitions into the study of vectors, vector spaces and dimension. Matrices are used to represent linear transformations and this leads to eigenvectors and eigenvalues. The precise use of definitions plays an important role. Examinations are proctored. This course is required in the math major and prepares students to take Math 323. It is a prerequisite to the majority of the higher level courses in mathematics."
-  },
-  {
-    "name": "Math 129, Calculus II",
+    "name": "MATH 129, Calculus II",
     "grade": "A",
     "description": "Continuation of MATH 122B or MATH 125. Techniques of symbolic and numerical integration, applications of the definite integral to geometry, physics, economics, and probability; differential equations from a numerical, graphical, and algebraic point of view; modeling using differential equations, approximations by Taylor series."
   }
