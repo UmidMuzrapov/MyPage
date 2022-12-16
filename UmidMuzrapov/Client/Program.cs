@@ -6,7 +6,7 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using UmidMuzrapov.Client;
-using TelerikBlazorApp1.Services;
+using UmidMuzrapov.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
