@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
-using TelerikBlazorApp1.Shared;
+using MyPage.Shared;
 
 namespace TelerikBlazorApp1.Services
 {
