@@ -6,7 +6,7 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using UmidMuzrapov.Client;
-using UmidMuzrapov.Services;
+using UmidMuzrapov.Client.Shared;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
